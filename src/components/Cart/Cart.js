@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Cart = () => {
+const Cart = (props) => {
+    const cart = props.cart;
+
     return (
         <div>
-            <h1>Sourab Hossain</h1>
+            <h4>Order Summary</h4>
+            <p>Items Ordered: {cart.length}</p>
         </div>
     );
 };
